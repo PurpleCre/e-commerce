@@ -1,10 +1,10 @@
 const swaggerAutogen = require('swagger-autogen')();
 const doc = {
   info: {
-    title: 'School Thingy',
-    description: 'Certificates Api'
+    title: 'e-commerce',
+    description: 'e-commerce Api'
   },
-  host: 'project2-2zzo.onrender.com',
+  host: 'localhost:3000',
   schemes: ['http', 'https']
 };
 const outputFile = './swagger.json';
