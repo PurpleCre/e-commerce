@@ -1,0 +1,233 @@
+// Local Host
+### Get all certificates
+GET http://localhost:3000/certificates
+
+### Get certificate by ID
+GET http://localhost:3000/certificates/679744fb0d0a4a1a069a9a34
+### Create certificate
+POST http://localhost:3000/certificates HTTP/1.1
+content-Type: application/json 
+
+{
+    "title": "Web Development",
+    "outcomes": [
+        "Learn the basics of web development",
+        "Demonstrate skills in HTML, CSS, Javascript, databases, and server-side development using PHP or .NETNode",
+        "Write operational code to pass and obtain data from a server including PHP and JavaScript",
+        "Inject data into the DOM (document object model) for dynamic web site applications",
+        "Show skill with database servers (Relational and NoSQL) and tools to design and build basic databases needed for dynamic web applications",
+        "Demonstrate proficiency in SQL code to implement a CRUD (Create, Read, Update, and Delete) management tool using a web interface",
+        "Use code to solve problems"
+    ],
+    "employment": [
+        "General programmer",
+        "Web developer"
+    ],
+    "requirements": "This is an advanced certificate. Prior to working on this certificate, you must complete Web and Computer Programming.",
+    "status": "In Progress",
+    "credits": 15,
+    "courses": [
+        "Introduction to Databases",
+        "Web Frontend Development II",
+        "Web Backend Development",
+        "Web Services",
+        "Web Full-Stack Development"
+    ]
+}
+### PUT certificate
+PUT  http://localhost:3000/certificates/679744fb0d0a4a1a069a9a34
+Content-Type: application/json
+
+{
+    "title": "Web Development",
+    "outcomes": [
+        "Learn the basics of web development",
+        "Demonstrate skills in HTML, CSS, Javascript, databases, and server-side development using PHP or .NETNode",
+        "Write operational code to pass and obtain data from a server including PHP and JavaScript",
+        "Inject data into the DOM (document object model) for dynamic web site applications",
+        "Show skill with database servers (Relational and NoSQL) and tools to design and build basic databases needed for dynamic web applications",
+        "Demonstrate proficiency in SQL code to implement a CRUD (Create, Read, Update, and Delete) management tool using a web interface",
+        "Use code to solve problems"
+    ],
+    "employment": [
+        "General programmer",
+        "Web developer"
+    ],
+    "requirements": "This is an advanced certificate. Prior to working on this certificate, you must complete Web and Computer Programming.",
+    "status": "In Progress",
+    "credits": 15,
+    "courses": [
+        "Introduction to Databases",
+        "Web Frontend Development II",
+        "Web Backend Development",
+        "Web Services",
+        "Web Full-Stack Development"
+    ]
+}
+
+### Delete certificate
+DELETE http://localhost:3000/certificates/679744fb0d0a4a1a069a9a34### Get all certificates
+
+
+###### routes for degrees
+
+### Get all degrees
+GET http://localhost:3000/degrees
+
+### Get degree by ID
+GET http://localhost:3000/degrees/6798974c70a6f3854483833a
+### Create degree
+POST http://localhost:3000/degrees HTTP/1.1
+content-Type: application/json 
+
+{
+    "title": "Associate of Applied Science Software Development",
+    "outcomes": [
+        "Demonstrate the traits of an effective team member.",
+        "Develop dynamic, data-driven web applications using both relational and NoSQL databases.",
+        "Develop applications in a variety of languages and platforms.",
+        "Design websites that are visually appealing and follow industry standards."
+    ],
+    "employment": [
+        "Successful students will be prepared for a variety of positions in web and software development."
+    ],
+    "requirements": "Degrees are built by selecting three certificates, which are typically made up of five courses each. Our recommended plans are designed to lead to better job opportunities. To earn a bachelor’s degree, you will complete three certificates plus additional requirements."
+}
+### PUT degree
+PUT  http://localhost:3000/degrees/6798a02f8bee7281ef91eb56
+Content-Type: application/json
+
+{
+    "title": "Associate of Applied Science Software Development",
+    "outcomes": [
+        "Demonstrate the traits of an effective team member.",
+        "Develop dynamic, data-driven web applications using both relational and NoSQL databases.",
+        "Develop applications in a variety of languages and platforms.",
+        "Design websites that are visually appealing and follow industry standards."
+    ],
+    "employment": [
+        "Successful students will be prepared for a variety of positions in web and software development."
+    ],
+    "requirements": "Degrees are built by selecting three certificates, which are typically made up of five courses each. Our recommended plans are designed to lead to better job opportunities. To earn a bachelor’s degree, you will complete three certificates plus additional requirements."
+}
+
+### Delete degree
+DELETE http://localhost:3000/degrees/6798a02f8bee7281ef91eb56
+
+
+
+//Production
+### Get all certificates
+GET project2-2zzo.onrender.com/certificates
+
+### Get certificate by ID
+GET project2-2zzo.onrender.com/certificates/679744fb0d0a4a1a069a9a34
+
+### Create certificate
+POST project2-2zzo.onrender.com/certificates HTTP/1.1
+content-Type: application/json 
+{
+    "title": "Web Development",
+    "outcomes": [
+        "Learn the basics of web development",
+        "Demonstrate skills in HTML, CSS, Javascript, databases, and server-side development using PHP or .NETNode",
+        "Write operational code to pass and obtain data from a server including PHP and JavaScript",
+        "Inject data into the DOM (document object model) for dynamic web site applications",
+        "Show skill with database servers (Relational and NoSQL) and tools to design and build basic databases needed for dynamic web applications",
+        "Demonstrate proficiency in SQL code to implement a CRUD (Create, Read, Update, and Delete) management tool using a web interface",
+        "Use code to solve problems"
+    ],
+    "employment": [
+        "General programmer",
+        "Web developer"
+    ],
+    "requirements": "This is an advanced certificate. Prior to working on this certificate, you must complete Web and Computer Programming.",
+    "status": "In Progress",
+    "credits": 15,
+    "courses": [
+        "Introduction to Databases",
+        "Web Frontend Development II",
+        "Web Backend Development",
+        "Web Services",
+        "Web Full-Stack Development"
+    ]
+}
+
+### PUT certificate
+PUT  project2-2zzo.onrender.com/certificates/679744fb0d0a4a1a069a9a34 HTTP/1.1
+Content-Type: application/json
+{
+    "title": "Web Development",
+    "outcomes": [
+        "Learn the basics of web development",
+        "Demonstrate skills in HTML, CSS, Javascript, databases, and server-side development using PHP or .NETNode",
+        "Write operational code to pass and obtain data from a server including PHP and JavaScript",
+        "Inject data into the DOM (document object model) for dynamic web site applications",
+        "Show skill with database servers (Relational and NoSQL) and tools to design and build basic databases needed for dynamic web applications",
+        "Demonstrate proficiency in SQL code to implement a CRUD (Create, Read, Update, and Delete) management tool using a web interface",
+        "Use code to solve problems"
+    ],
+    "employment": [
+        "General programmer",
+        "Web developer"
+    ],
+    "requirements": "This is an advanced certificate. Prior to working on this certificate, you must complete Web and Computer Programming.",
+    "status": "In Progress",
+    "credits": 15,
+    "courses": [
+        "Introduction to Databases",
+        "Web Frontend Development II",
+        "Web Backend Development",
+        "Web Services",
+        "Web Full-Stack Development"
+    ]
+}
+
+### Delete certificate
+DELETE project2-2zzo.onrender.com/certificates/679744fb0d0a4a1a069a9a34
+
+
+###### routes for degrees
+
+### Get all degrees
+GET httproject2-2zzo.onrender.com/degrees
+
+### Get degree by ID
+GET httproject2-2zzo.onrender.com/degrees/6798974c70a6f3854483833a
+### Create degree
+POST htproject2-2zzo.onrender.com/degrees HTTP/1.1
+content-Type: application/json 
+
+{
+    "title": "Associate of Applied Science Software Development",
+    "outcomes": [
+        "Demonstrate the traits of an effective team member.",
+        "Develop dynamic, data-driven web applications using both relational and NoSQL databases.",
+        "Develop applications in a variety of languages and platforms.",
+        "Design websites that are visually appealing and follow industry standards."
+    ],
+    "employment": [
+        "Successful students will be prepared for a variety of positions in web and software development."
+    ],
+    "requirements": "Degrees are built by selecting three certificates, which are typically made up of five courses each. Our recommended plans are designed to lead to better job opportunities. To earn a bachelor’s degree, you will complete three certificates plus additional requirements."
+}
+### PUT degree
+PUT  htproject2-2zzo.onrender.com/degrees/6798a02f8bee7281ef91eb56
+Content-Type: application/json
+
+{
+    "title": "Associate of Applied Science Software Development",
+    "outcomes": [
+        "Demonstrate the traits of an effective team member.",
+        "Develop dynamic, data-driven web applications using both relational and NoSQL databases.",
+        "Develop applications in a variety of languages and platforms.",
+        "Design websites that are visually appealing and follow industry standards."
+    ],
+    "employment": [
+        "Successful students will be prepared for a variety of positions in web and software development."
+    ],
+    "requirements": "Degrees are built by selecting three certificates, which are typically made up of five courses each. Our recommended plans are designed to lead to better job opportunities. To earn a bachelor’s degree, you will complete three certificates plus additional requirements."
+}
+
+### Delete degree
+DELETE project2-2zzo.onrender.com/degrees/6798a02f8bee7281ef91eb56
