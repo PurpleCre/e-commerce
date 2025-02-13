@@ -23,7 +23,7 @@ const getSingle = async (req, res) => {
   }
   const productId = new ObjectId(req.params.id);
   try { 
-    mongo.getDatabase().db('project2').collection('product').find({ _id: productId }).toArray().then((result) => {
+    mongo.getDatabase().db('e-commerce').collection('product').find({ _id: productId }).toArray().then((result) => {
       res.setHeader('Content-Type', 'application/json');
       res.status(200).json(result[0]);
     })
@@ -42,7 +42,7 @@ const createProduct = async (req, res) => {
     inStock: req.body.inStock,
     image: req.body.image,
   };
-  const response = await mongo.getDatabase().db("project2").collection('product').insertOne(product);
+  const response = await mongo.getDatabase().db("e-commerce").collection('product').insertOne(product);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
