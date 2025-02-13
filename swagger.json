@@ -8,7 +8,6 @@
   "host": "e-commerce-xk2o.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
