@@ -3,10 +3,11 @@ const passport = require("passport");
 const routes = require('express').Router();
 
 routes.use('/', require('./swagger'));
-routes.get('/', (req, res) => {
-  // swagger.tags=['Hello World']
-  res.send('Hello World');
-});
+
+// routes.get('/', (req, res) => {
+//   // swagger.tags=['Hello World']
+//   res.send('Hello World');
+// });
 
 routes.get("/login", passport.authenticate("github"), (req, res) => { })
 routes.get("/logout", function (req, res, next) {
@@ -16,9 +17,11 @@ routes.get("/logout", function (req, res, next) {
   });
 });
 
+
 routes.use('/user', require('./user'));
 routes.use('/product', require('./product'));
 routes.use('/admin', require('./admin'));
 routes.use('/order', require('./order'));
+
 
 module.exports = routes;
