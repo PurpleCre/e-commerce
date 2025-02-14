@@ -18,5 +18,7 @@ routes.get("/logout", function (req, res, next) {
 
 routes.use('/user', require('./user'));
 routes.use('/product', require('./product'));
+routes.use('/admin', require('./admin'));
+routes.use('/order', require('./order'));
 
 module.exports = routes;
