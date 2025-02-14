@@ -5,7 +5,7 @@
     "description": "e-commerce Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "e-commerce-xk2o.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
