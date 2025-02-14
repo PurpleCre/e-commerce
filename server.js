@@ -1,12 +1,13 @@
 // express server
 const express = require('express');
-const app = express();
 const mongodb = require('./db/connect');
 const bodyParser = require('body-parser');
 const passport = require("passport");
 const session = require("express-session");
 const GitHubStrategy = require("passport-github2").Strategy;
 const cors = require("cors");
+
+const app = express();
 
 
 const port = 3000;
@@ -41,9 +42,17 @@ passport.use(new GitHubStrategy({
   callbackURL: process.env.CALLBACK_URL
 },
   function (accessToken, refreshToken, profile, done) {
-    //User.findOrCreate({githubId: profile.id}, function (err, user) {
-    return done(null, profile);
-    // });
+    //   //User.findOrCreate({githubId: profile.id}, function (err, user) {
+    //   return done(null, profile);
+    //   // });
+    // }
+    if (profile) {
+      console.log('User  profile:', profile);
+      return done(null, profile);
+    } else {
+      console.error('Failed to fetch user profile');
+      return done(new Error('Failed to fetch user profile'));
+    }
   }
 ));
 
