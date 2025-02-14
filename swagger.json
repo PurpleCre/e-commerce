@@ -5,9 +5,10 @@
     "description": "e-commerce Api",
     "version": "1.0.0"
   },
-  "host": "e-commerce-xk2o.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
@@ -71,12 +72,6 @@
                   "example": "any"
                 },
                 "phone": {
-                  "example": "any"
-                },
-                "pendingOrders": {
-                  "example": "any"
-                },
-                "orderHistory": {
                   "example": "any"
                 }
               }

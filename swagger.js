@@ -4,7 +4,7 @@ const doc = {
     title: 'e-commerce',
     description: 'e-commerce Api'
   },
-  host: 'localhost:3000',
+  host: 'e-commerce-xk2o.onrender.com',
   schemes: ['http', 'https']
 };
 const outputFile = './swagger.json';

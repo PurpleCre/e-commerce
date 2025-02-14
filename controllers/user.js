@@ -38,9 +38,7 @@ const createUser = async (req, res) => {
     username: req.body.username,
     email: req.body.email,
     password: req.body.password,
-    phone: req.body.phone,
-    pendingOrders: req.body.pendingOrders,
-    orderHistory: req.body.orderHistory,
+    phone: req.body.phone
   };
   const response = await mongo.getDatabase().db("e-commerce").collection('user').insertOne(user);
   if (response.acknowledged) {

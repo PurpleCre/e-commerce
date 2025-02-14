@@ -7,7 +7,7 @@ const saveProduct = (req, res, next) => {
     description: 'required',
     price: 'required',
     discount: 'required',
-    inStock: 'required|bool',
+    inStock: 'required|boolean',
     image: 'required'
   };
   validator(req.body, validationRule, {}, (err, status) => {
@@ -29,8 +29,6 @@ const saveUser = (req, res, next) => {
     email: "required|email",
     password: "required",
     phone: "required",
-    pendingOrders: "required",
-    orderHistory: "required",
   };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
