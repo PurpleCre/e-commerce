@@ -80,8 +80,14 @@ mongodb.initDb((err) => {
   if (err) {
     console.log(err);
   } else {
-    app.listen(process.env.PORT || port, () => {
-      console.log('Web Server is listening at port ' + (process.env.PORT || port));
-    });
+    // Only start the server if not in test environment
+    if (process.env.NODE_ENV !== 'test') {
+      app.listen(process.env.PORT || port, () => {
+        console.log('Web Server is listening at port ' + (process.env.PORT || port));
+      });
+    }
   }
 });
+
+// Export the app for testing
+module.exports = app;

@@ -231,3 +231,6 @@ Content-Type: application/json
 
 ### Delete degree
 DELETE project2-2zzo.onrender.com/degrees/6798a02f8bee7281ef91eb56
+
+###
+GET http://localhost:3000/product HTTP/1.1

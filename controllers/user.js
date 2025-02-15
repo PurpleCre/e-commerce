@@ -5,14 +5,14 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
   //#swagger.tags=['user']
-  console.log('here')
+  console.log('here');
   try {
-    mongo.getDatabase().db("e-commerce").collection('user').find().toArray().then((lists) => {
-      res.setHeader('Content-Type', 'application/json');
-      res.status(200).json(lists);
-    });
+    const users = await mongo.getDatabase().db("e-commerce").collection('user').find().toArray();
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json(users);
   } catch (err) {
-    res.status(400).json({ message: err });
+    console.error('Error fetching users:', err); // Log the error for debugging
+    res.status(500).json({ message: 'Internal Server Error' }); // Use 500 for server errors
   }
 };
 
@@ -22,7 +22,7 @@ const getSingle = async (req, res) => {
     res.status(400).json('Must use a valid user id to find a user.');
   }
   const userId = new ObjectId(req.params.id);
-  try { 
+  try {
     mongo.getDatabase().db('e-commerce').collection('user').find({ _id: userId }).toArray().then((result) => {
       res.setHeader('Content-Type', 'application/json');
       res.status(200).json(result[0]);
