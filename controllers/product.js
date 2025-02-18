@@ -16,6 +16,19 @@ const getAll = async (req, res) => {
   }
 };
 
+const getInstock = async (req, res) => {
+  //#swagger.tags=['product']
+  const stock = "true";
+  try {
+    mongo.getDatabase().db("e-commerce").collection('product').find({ inStock: stock}).toArray().then((lists) => {
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(lists);
+    });
+  } catch (err) {
+    res.status(400).json({ message: err });
+  }
+};
+
 const getSingle = async (req, res) => {
   //#swagger.tags=['product']
   if (!ObjectId.isValid(req.params.id)) {
@@ -77,6 +90,28 @@ const updateProduct = async (req, res) => {
   }
 };
 
+const updateProductImage = async (req, res) => {
+  //#swagger.tags=['product']
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid product id to update a product.');
+  }
+
+  const productId = new ObjectId(req.params.id);
+  const product = {
+    img: req.body.image,
+  };
+  const response = await mongo
+    .getDatabase()
+    .db("e-commerce")
+    .collection('product')
+    .updateOne({ _id: productId }, { $set: {image: img} });
+  if (response.modifiedCount > 0) {
+    res.status(204).send();
+  } else {
+    res.status(500).json(response.error || 'Some error occured while updating the user.');
+  }
+};
+
 const deleteProduct = async (req, res) => {
   //#swagger.tags=['product']
   if (!ObjectId.isValid(req.params.id)) {
@@ -98,8 +133,10 @@ const deleteProduct = async (req, res) => {
 
 module.exports = {
   getAll,
+  getInstock,
   getSingle,
   createProduct,
   updateProduct,
+  updateProductImage,
   deleteProduct
 };

@@ -16,6 +16,22 @@ const getAll = async (req, res) => {
   }
 };
 
+const getByStatus = async (req, res) => {
+  //#swagger.tags=['order']
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid order id to find a order.');
+  }
+  const status = req.params.status;
+  try { 
+    mongo.getDatabase().db('e-commerce').collection('order').find({ _status: status }).toArray().then((result) => {
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(result[0]);
+    })
+  } catch (err) {
+    res.status(400).json({ message: err });
+  }
+};
+
 const getSingle = async (req, res) => {
   //#swagger.tags=['order']
   if (!ObjectId.isValid(req.params.id)) {
@@ -98,6 +114,7 @@ const deleteOrder = async (req, res) => {
 
 module.exports = {
   getAll,
+  getByStatus,
   getSingle,
   createOrder,
   updateOrder,
