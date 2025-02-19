@@ -1,0 +1,74 @@
+[
+  {
+    "username": "Sophia",
+    "email": "sophia.miller@example.com",
+    "password": "password123",
+    "level": "admin",
+    "phone": 987654321,
+    "address": "14 Baker Street"
+  },
+  {
+    "username": "James",
+    "email": "james.wilson@example.com",
+    "password": "jamespass456",
+    "level": "employee",
+    "phone": 456789123,
+    "address": "98 Greenfield Ave"
+  },
+  {
+    "username": "Olivia",
+    "email": "olivia.johnson@example.com",
+    "password": "securepass789",
+    "level": "manager",
+    "phone": 321456987,
+    "address": "22 Oakwood Drive"
+  },
+  {
+    "username": "Liam",
+    "email": "liam.anderson@example.com",
+    "password": "liampass321",
+    "level": "employee",
+    "phone": 654123987,
+    "address": "67 Maple Avenue"
+  },
+  {
+    "username": "Emma",
+    "email": "emma.taylor@example.com",
+    "password": "emmapass456",
+    "level": "admin",
+    "phone": 789321654,
+    "address": "33 Pine Street"
+  },
+  {
+    "username": "Noah",
+    "email": "noah.clark@example.com",
+    "password": "noahsecure123",
+    "level": "manager",
+    "phone": 147258369,
+    "address": "88 Birch Road"
+  },
+  {
+    "username": "Ava",
+    "email": "ava.martin@example.com",
+    "password": "avapassword",
+    "level": "employee",
+    "phone": 258369147,
+    "address": "45 Elm Street"
+  },
+  {
+    "username": "Mason",
+    "email": "mason.white@example.com",
+    "password": "masonpass789",
+    "level": "admin",
+    "phone": 369147258,
+    "address": "10 Willow Lane"
+  },
+  {
+    "username": "Isabella",
+    "email": "isabella.hall@example.com",
+    "password": "isapass123",
+    "level": "manager",
+    "phone": 951753852,
+    "address": "72 Cedar Avenue"
+  }
+]

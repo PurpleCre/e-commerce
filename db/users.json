@@ -1,0 +1,106 @@
+[
+  {
+    "username": "johndoe91",
+    "email": "john.doe91@example.com",
+    "password": "jdsecurePass!12",
+    "phone": "+14155552671",
+    "pendingOrders": [{ "orderId": "PENDING1001" }],
+    "orderHistory": [{ "orderId": "ORDER2001" }]
+  },
+  {
+    "username": "sarah_connor",
+    "email": "s.connor@example.org",
+    "password": "terminatorFuture1",
+    "phone": "+13105551234",
+    "pendingOrders": [{ "orderId": "PENDING1002" }],
+    "orderHistory": [{ "orderId": "ORDER2002" }]
+  },
+  {
+    "username": "mike_rocks22",
+    "email": "mike.rocks22@example.net",
+    "password": "rockSolid@Pass99",
+    "phone": "+19175559876",
+    "pendingOrders": [{ "orderId": "PENDING1003" }],
+    "orderHistory": [{ "orderId": "ORDER2003" }]
+  },
+  {
+    "username": "emily_wonder",
+    "email": "emily.wonder@example.com",
+    "password": "wonderland_4567",
+    "phone": "+16505554567",
+    "pendingOrders": [{ "orderId": "PENDING1004" }],
+    "orderHistory": [{ "orderId": "ORDER2004" }]
+  },
+  {
+    "username": "alex.traveler",
+    "email": "alex.traveler@example.com",
+    "password": "goPlaces!987",
+    "phone": "+17345551234",
+    "pendingOrders": [{ "orderId": "PENDING1005" }],
+    "orderHistory": [{ "orderId": "ORDER2005" }]
+  },
+  {
+    "username": "nina.artist",
+    "email": "nina.artist@example.net",
+    "password": "paint4Life$1",
+    "phone": "+18505557890",
+    "pendingOrders": [{ "orderId": "PENDING1006" }],
+    "orderHistory": [{ "orderId": "ORDER2006" }]
+  },
+  {
+    "username": "david_runner",
+    "email": "david.runner@example.org",
+    "password": "sprintFast_123",
+    "phone": "+14445552345",
+    "pendingOrders": [{ "orderId": "PENDING1007" }],
+    "orderHistory": [{ "orderId": "ORDER2007" }]
+  },
+  {
+    "username": "lisa.coder",
+    "email": "lisa.coder@example.io",
+    "password": "debugMaster@2024",
+    "phone": "+15105558901",
+    "pendingOrders": [{ "orderId": "PENDING1008" }],
+    "orderHistory": [{ "orderId": "ORDER2008" }]
+  },
+  {
+    "username": "tom_gardener",
+    "email": "tom.gardener@example.co.uk",
+    "password": "greenThumb!567",
+    "phone": "+16235554545",
+    "pendingOrders": [{ "orderId": "PENDING1009" }],
+    "orderHistory": [{ "orderId": "ORDER2009" }]
+  },
+  {
+    "username": "anna_reader",
+    "email": "anna.reader@example.com",
+    "password": "bookLover#321",
+    "phone": "+13305555678",
+    "pendingOrders": [{ "orderId": "PENDING1010" }],
+    "orderHistory": [{ "orderId": "ORDER2010" }]
+  },
+  {
+    "username": "mark_photog",
+    "email": "mark.photog@example.org",
+    "password": "snapShot99!",
+    "phone": "+14505556789",
+    "pendingOrders": [{ "orderId": "PENDING1011" }],
+    "orderHistory": [{ "orderId": "ORDER2011" }]
+  },
+  {
+    "username": "oliver_baker",
+    "email": "oliver.baker@example.net",
+    "password": "breadMaster_22",
+    "phone": "+15405557890",
+    "pendingOrders": [{ "orderId": "PENDING1012" }],
+    "orderHistory": [{ "orderId": "ORDER2012" }]
+  },
+  {
+    "username": "sophie_dancer",
+    "email": "sophie.dancer@example.com",
+    "password": "twirlStep456",
+    "phone": "+16305558912",
+    "pendingOrders": [{ "orderId": "PENDING1013" }],
+    "orderHistory": [{ "orderId": "ORDER2013" }]
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Wooden Photo Frame",
+    "description": "Elegant wooden frame for photos",
+    "price": 5,
+    "discount": 0.2,
+    "inStock": "true",
+    "image": {
+      "description": "sample image of a wooden photo frame",
+      "PrimaryLarge": "https://i.imgur.com/MrPRPqD.jpg",
+      "PrimarySmall": "https://i.imgur.com/MrPRPqD.jpg"
+    }
+  },
+  {
+    "title": "Black Metal Frame",
+    "description": "Modern black metal frame for wall art",
+    "price": 7,
+    "discount": 0.15,
+    "inStock": "true",
+    "image": {
+      "description": "sample image of a black metal frame",
+      "PrimaryLarge": "https://i.imgur.com/yNeNfVQ.jpg",
+      "PrimarySmall": "https://i.imgur.com/yNeNfVQ.jpg"
+    }
+  },
+  {
+    "title": "Collage Frame",
+    "description": "Multi-photo collage frame for family pictures",
+    "price": 10,
+    "discount": 0.05,
+    "inStock": "false",
+    "image": {
+      "description": "sample image of a collage frame",
+      "PrimaryLarge": "https://i.imgur.com/vO8ClZN.jpg",
+      "PrimarySmall": "https://i.imgur.com/vO8ClZN.jpg"
+    }
+  },
+  {
+    "title": "Rustic Wooden Frame",
+    "description": "Rustic frame perfect for vintage decor",
+    "price": 8,
+    "discount": 0.1,
+    "inStock": "true",
+    "image": {
+      "description": "sample image of a rustic wooden frame",
+      "PrimaryLarge": "https://i.imgur.com/TQvPzP4.jpg",
+      "PrimarySmall": "https://i.imgur.com/TQvPzP4.jpg"
+    }
+  },
+  {
+    "title": "Digital Photo Frame",
+    "description": "Digital frame with slideshow features",
+    "price": 50,
+    "discount": 0.3,
+    "inStock": "true",
+    "image": {
+      "description": "sample image of a digital photo frame",
+      "PrimaryLarge": "https://i.imgur.com/jZx4rYR.jpg",
+      "PrimarySmall": "https://i.imgur.com/jZx4rYR.jpg"
+    }
+  },
+  {
+    "title": "Gold Plated Frame",
+    "description": "Luxurious gold-plated frame for artwork",
+    "price": 15,
+    "discount": 0.2,
+    "inStock": "false",
+    "image": {
+      "description": "sample image of a gold-plated frame",
+      "PrimaryLarge": "https://i.imgur.com/pRhTXFc.jpg",
+      "PrimarySmall": "https://i.imgur.com/pRhTXFc.jpg"
+    }
+  },
+  {
+    "title": "Silver Frame",
+    "description": "Simple silver frame for certificates",
+    "price": 6,
+    "discount": 0.1,
+    "inStock": "true",
+    "image": {
+      "description": "sample image of a silver frame",
+      "PrimaryLarge": "https://i.imgur.com/UXE9BdI.jpg",
+      "PrimarySmall": "https://i.imgur.com/UXE9BdI.jpg"
+    }
+  },
+  {
+    "title": "Glass Frame",
+    "description": "Transparent glass frame with minimal design",
+    "price": 12,
+    "discount": 0.05,
+    "inStock": "true",
+    "image": {
+      "description": "sample image of a glass frame",
+      "PrimaryLarge": "https://i.imgur.com/G0w9Rnr.jpg",
+      "PrimarySmall": "https://i.imgur.com/G0w9Rnr.jpg"
+    }
+  },
+  {
+    "title": "Plastic Frame",
+    "description": "Affordable plastic frame for quick decor",
+    "price": 2,
+    "discount": 0.2,
+    "inStock": "true",
+    "image": {
+      "description": "sample image of a plastic frame",
+      "PrimaryLarge": "https://i.imgur.com/YyFC1nV.jpg",
+      "PrimarySmall": "https://i.imgur.com/YyFC1nV.jpg"
+    }
+  }
+]

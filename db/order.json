@@ -1,0 +1,74 @@
+[
+  {
+    "customerId": "8f3920da78bde9f12003",
+    "seller": "Emma Johnson",
+    "price": 45,
+    "commision": 0.15,
+    "adminId": "23984023abde23cdef",
+    "status": "completed"
+  },
+  {
+    "customerId": "af9384bc28ade8f90012",
+    "seller": "Michael Brown",
+    "price": 33,
+    "commision": 0.1,
+    "adminId": "111222333aaa444bbb",
+    "status": "pending"
+  },
+  {
+    "customerId": "bd8320ad88ade8f76543",
+    "seller": "Sophia Davis",
+    "price": 50,
+    "commision": 0.2,
+    "adminId": "abcd1234efgh5678ijkl",
+    "status": "shipped"
+  },
+  {
+    "customerId": "cd7829aa28ade8f65432",
+    "seller": "James Wilson",
+    "price": 29,
+    "commision": 0.12,
+    "adminId": "123abc456def789ghi",
+    "status": "cancelled"
+  },
+  {
+    "customerId": "de6749cc98ade8f54321",
+    "seller": "Olivia Martinez",
+    "price": 62,
+    "commision": 0.08,
+    "adminId": "zxy987wvu654tsr321",
+    "status": "pending"
+  },
+  {
+    "customerId": "ef5623bb28ade8f43210",
+    "seller": "William Anderson",
+    "price": 18,
+    "commision": 0.1,
+    "adminId": "lmno456pqr789stu123",
+    "status": "completed"
+  },
+  {
+    "customerId": "fg4521dd28ade8f32109",
+    "seller": "Ava Taylor",
+    "price": 37,
+    "commision": 0.09,
+    "adminId": "mnop1234qrst5678uvw",
+    "status": "shipped"
+  },
+  {
+    "customerId": "gh3420ee28ade8f21098",
+    "seller": "Benjamin Clark",
+    "price": 22,
+    "commision": 0.11,
+    "adminId": "opqr789stuv456wxy123",
+    "status": "pending"
+  },
+  {
+    "customerId": "ij2319ff28ade8f10987",
+    "seller": "Mia Lewis",
+    "price": 40,
+    "commision": 0.13,
+    "adminId": "rstuvw123xyz456mnop789",
+    "status": "completed"
+  }
+]
